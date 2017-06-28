@@ -2,6 +2,10 @@
 
 lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
+#Del: Hey, I've assumed for part A that each line of code below operates on the lines array
+#     strictly as given above: this seems to be needed for questions 7 and 8 to make sense
+#     (i.e. removing 'Edinburgh Park' twice). 
+
 # 1. Work out how many stops there are in the array
  puts lines.length()
 
