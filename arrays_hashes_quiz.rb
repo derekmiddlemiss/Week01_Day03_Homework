@@ -22,6 +22,7 @@ puts lines.find_index("Haymarket")
 
 # 5. Add 'Airport' to the start of the array
 lines = ["Airport"] + lines
+#Other soln: lines.unshift("Airport")
 #Del: or lines.insert(0,"Airport")
 
 # 6. Add 'York Place' to the end of the array
@@ -114,6 +115,15 @@ users["Erik"][:home_town]="Edinburgh"
 
 # 8. Add a pet dog to Erik called "Fluffy"
 users["Erik"][:pets]["Fluffy"] = :dog
+#Solns: users["Erik"][:pets].store("Fluffy", :dog)
+#Solns: users["Erik"][:pets].merge!( "Fluffy" => :dog )
 
 # 9. Add yourself to the users hash
 users["Del"] = { twitter: "none", favourite_numbers: [-1, 0, 1, 2], home_town: "Arbroath", pets: { "Rusty" => :dog } }
+#Use proper indentation etc, will make it easier!
+users["Del"] = { 
+  twitter: "none", 
+  favourite_numbers: [-1, 0, 1, 2], 
+  home_town: "Arbroath", 
+  pets: { "Rusty" => :dog } 
+}
